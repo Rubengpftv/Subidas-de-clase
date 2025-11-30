@@ -14,7 +14,8 @@
 		Escribir "Ingrese el lado 3:"
 		Leer l3
 		//Se comprueba la formula de la desigualdad triangular, "la suma de dos lados cualquiera debe ser mayor que el tercer lado"
-		si l3 + l1 > l2 y l3 + l2 > l1 y l1 + l2 > l3
+		si l3 + l1 > l2 y l3 + l2 > l1 y l1 + l2 > l3 Entonces
+			
 		// encontrar la hipotenusa (mayor lado)
 		Si l1>l2 Entonces
 			cat1<-l2
@@ -36,9 +37,7 @@
 			FinSi
 		FinSi
 		Escribir "Se puede formar un triangulo" 
-	SiNo
-		Escribir "No se puede formar un triangulo con esos lados" //si no se cumple la norma salta este mensaje
-	FinSi
+	
 	
 	
 		// ver si cumple con Pitagoras
@@ -49,6 +48,8 @@
 		SiNo
 			Escribir "No es un triangulo rectangulo."
 		FinSi
-	
+	SiNo
+		Escribir "No se puede formar un triangulo con esos lados" //si no se cumple la norma salta este mensaje
+	FinSi
 FinAlgoritmo
 
